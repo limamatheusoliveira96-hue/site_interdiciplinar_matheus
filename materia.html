@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+</head>
+<body>
+
+<nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">PIT</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">INÍCIO</a></li>
+                    <li><a href="#">MATÉRIAS</a></li>
+                    <li><a href="#">PROJETOS</a></li>
+                    <li><a href="#">SOBRE</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+    </section>
+    <div style="height: 1000px">
+        <!-- just to make scrolling effect possible -->
+			<h2 class="myH2">O QUE É ISSO ?</h2>
+			<p class="myP">Este site foi desenvolvido como um portfólio para apresentar os projetos realizados ao longo do primeiro semestre do curso. Durante esse período, tivemos diversos aprendizados importantes, explorando conceitos fundamentais e desenvolvendo habilidades práticas em programação e desenvolvimento de sistemas.
+
+               <p class="myP"> Ao longo das aulas, construímos projetos incríveis que ajudaram a consolidar nosso conhecimento e a evoluir tecnicamente. Cada trabalho representa uma etapa do nosso crescimento, mostrando a evolução desde os primeiros exercícios até soluções mais completas e estruturadas.</p>
+
+                <p class="myP">Este portfólio reúne esses projetos como forma de demonstrar nossa trajetória, dedicação e o que fomos capazes de desenvolver nesse início da jornada na área de tecnologia.</p>
+			
+    </div>
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    <script>$('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+
+});</script>
+
+
+
+</body>
+</html>
