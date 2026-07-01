@@ -449,11 +449,11 @@ body {
     }
 
     .myH2 {
-        font-size: 5rem;
+        font-size: 2rem;
     }
 
     .myP {
-        font-size: 2rem;
+        font-size: 1rem;
         padding: 0 20px;
     }
 }
@@ -465,12 +465,12 @@ body {
     }
 
     .myH2 {
-        font-size: 3rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 
     .myP {
-        font-size: 15px;
+        font-size: 0.95rem;
         line-height: 1.8;
     }
 
@@ -486,6 +486,9 @@ body {
 }
 .carousel-img{
     height: 500px;
+    object-fit: cover;
+    max-width: 600px;
+    
 }
 
 .carousel-caption{
